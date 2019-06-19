@@ -69,9 +69,19 @@ for item in comsuffix:
 def dropbycol(col,para):
     new = n2[~n2[col].str.contains(para,na=False)]
     return new
+
+#Save the rows depends on whether the selected column contains a specific parameter.
+def savebycol(col,para):
+    new = n2[n2[col].str.contains(para,na=False)]
+    return new
     
 #for example, delete all the rows depends on whether the 'e-Mail' column contains 'edu'
 n2 = dropbycol('e-Mail','edu') 
+
+#for example, save all the rows depends on whether the 'Title' column contains the element in col2.
+col2 = ['a','b','c','d']
+for item in col2:
+    n2 = savebycol('Title',item)
 
 #Save to excel
 n1.to_excel('n1.xlsx',header=True, index=False)
