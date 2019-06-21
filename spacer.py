@@ -1,4 +1,5 @@
-#Add space between letters and numbers
+#Add(insert) space between letters and numbers
+#在数字和字母间加空格
 import re
 txt = '!!!this, 1is, 2a 3test!!!'
 def spacer(text):
