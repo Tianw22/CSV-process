@@ -18,7 +18,8 @@ def inputexcel(excel1,baseexcel,header1,header2):
     l1 = e1['Website']
     l2 = e2['Company Domain Name']
     
-    # Make sure and change the elements in list to string.
+    # Make sure to change the elements in the list into string.
+    #Or will throw a error that "object of type 'float' has no len()"
     l1 = map(str, l1)
     l1 = list(l1)
     l2 = map(str, l2)
