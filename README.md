@@ -7,3 +7,4 @@
 ##### 查重.py => 对公司名进行格式预处理，并查公司名是否在 hubspot 输出中。
 ##### companynamevshs.py => better version of 查重.py.
 ##### StemmingHtml.py => 删掉含有韩文，日文，中文的行。
+##### OnlyAsian.py => 用国家及地区两字母缩写筛选亚洲地区的数据
